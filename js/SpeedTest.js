@@ -107,7 +107,7 @@ function changeIndex() {
   });
 
   //Chain to start timer  and compare the text with the origin every key press
-  testArea.focusin(start_timer).keyup(compare);
+  testArea.keypress(start_timer).keyup(compare);
 
   //reset button click to clear text area and timer
   resetButton.click(() => {
