@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Typing Speed Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="masthead">
+        <h1>Test Your Typing Speed</h1>
+    </header>
+    <main class="main">
+        <article class="intro">
+            <p>This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The
+                timer starts when you start typing, and only stops when you match this text exactly. Good Luck!</p>
+        </article><!-- .intro -->
+        <section class="test-area">
+            <div id="origin-text">
+                <p>The text to test.</p>
+                <button class="btn btn-default" id="change"><i class="fa fa-refresh"></i></button>
+            </div><!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="6"
+                    placeholder="The clock starts when you start typing."></textarea>
+            </div><!-- .test-wrapper -->
+
+            <div class="meta ">
+                <section id="clock ">
+                    <div class="timer" id="timer">00:00:00</div>
+                </section>
+
+            <button class="btn btn-outline-primary" id="reset">Reset</button>
+            </div><!-- .meta -->
+        </section><!-- .test-area -->
+    </main>
+    <!-- modal -->
+    <div class="modal" id="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Congratulations </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-outline-primary" id="tryAgain">Try again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/SpeedTest.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
